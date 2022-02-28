@@ -1,13 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 :root {
     --font-base: "DM Sans", sans-serif;
-    --primary-color: #edf2f8;
-    --secondary-color: #313bac;
+    --primary-color: #e9f5ff;
+    --secondary-color: #2557ec;
     --black-color: #030303;
     --lightGray-color: #e4e4e4;
     --gray-color: #6b7688;
     --brown-color: #46364a;
     --white-color: #ffffff;
+    --green-color: #4ad395;
+    --orange-color: #ffeeb6;
+    --purple-color: #d9d8ff;
+    --cyan-color: #c7ecff;
+    --light-green-color: #d2f8e1;
+    --subtle-purple-color: rgba(248, 246, 255, 1);
+    --accent-purple-color: rgba(126, 80, 255, 1);
+    --subtle-green-color: rgba(243, 252, 249, 1);
+    --subtle-green1-color: rgba(241, 254, 244, 1);
+    --highlight-green-color: rgba(235, 249, 245, 1);
+    --accent-green-color: rgba(0, 195, 143, 1);
+    --subtle-blue-color: rgba(246, 250, 255, 1);
+    --accent-blue-color: rgba(77, 153, 255, 1);
+    --subtle-orange-color: rgba(255, 251, 243, 1);
+    --accent-orange-color: rgba(251, 171, 23, 1);
+    --highlight-orange-color: rgba(255, 156, 51, 1);
+    --subtle-red-color: rgba(249, 211, 224, 1);
+    --highlight-red-color: rgba(234, 28, 129, 1);
 }
 
 * {
@@ -15,4 +33,32 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    position: relative;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: var(--font-base);
+}
+
+body {
+    font-size: 16px;
+}
+
+#app_window {
+    height: 100%;
+}
+
+button,
+textarea,
+input,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+p {
+    display: block;
 }
